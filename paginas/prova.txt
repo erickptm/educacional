@@ -1,0 +1,385 @@
+<!DOCTYPE php>
+<php lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Seja seguro na Web</title>
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../estilo/style.css">
+        <link rel="shortcut icon" href="../icon/favicon.ico" type="image/x-icon">
+
+        <style>
+            .correta {
+                color: green;
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .incorreta {
+                color: red;
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .nenhuma {
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .pontos {
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+
+            <h1>Combater Cyberbullying, Pedofilia e outros Riscos Online com
+                Crianças e Adolescentes</h1>
+
+            <p>O objetivo deste projeto é capacitar crianças e adolescentes de escolas públicas em reconhecer, evitar e
+                combater os riscos online</p>
+
+        </header>
+
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav>
+            <a href="login.php" rel="next">Login</a>
+            <a href="../index.php" rel="prev">Home</a>
+            <a href="cyberbullying.php" rel="next">O que é Cyberbullying?</a>
+            <a href="pedofilia.php" rel="next">O que é Pedofilia?</a>
+            <a href="riscos.php" rel="next">Outros Riscos</a>
+            <a href="jogo.php" rel="next">Jogos On-line</a>
+            <a href="prova.php" rel="next">Avaliação</a>
+        </nav>
+
+        <main>
+            <article>
+
+                <h1>Avaliação de conhecimento sobre o material de estudo</h1>
+
+                <p class="textoArrumado">Sabe quando você estuda coisas novas na escola ou em casa? Às vezes, é
+                    importante
+                    saber o quanto você realmente aprendeu. Para fazer isso, usamos algo chamado 'avaliação de
+                    conhecimento'. É como um teste ou uma pergunta que nos ajuda a descobrir o quanto entendemos daquilo
+                    que
+                    estudamos. É como medir o quanto você aprendeu e se lembra do que aprendeu.</p>
+
+                <aside>
+
+                    <h3>Avaliação de conhecimento</h3>
+
+                    <h1>Questionário</h1>
+
+                    <form id="quiz-form">
+                        <!-- Pergunta 1 -->
+                        <div class="pergunta">
+                            <p>Pergunta 1: O que é fazer coisas ruins na internet?</p>
+                            <label>
+                                <input type="radio" name="resposta1" value="a"> a)Falar com amigos de maneira legal.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta1" value="b"> b)Ajudar pessoas na internet.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta1" value="c"> c)Usar computadores e celulares para
+                                fazer
+                                mal a alguém, ameaçar ou falar coisas ruins sobre eles.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta1" value="d"> d) Descobrir como resolver problemas
+                                quando
+                                brigamos na internet.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 2 -->
+                        <div class="pergunta">
+                            <p>Pergunta 2: O que pode acontecer quando alguém é maltratado online de forma ruim?</p>
+                            <label>
+                                <input type="radio" name="resposta2" value="a"> a)Ficar mais amiguinho.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta2" value="b"> b)Ficar triste e preocupado.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta2" value="c"> c)Ficar mais confiante em si mesmo.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta2" value="d"> d)Ficar mais próximo dos amigos.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 3 -->
+                        <div class="pergunta">
+                            <p>Pergunta 3: O que devemos fazer para parar o cyberbullying na internet?</p>
+                            <label>
+                                <input type="radio" name="resposta3" value="a"> a)Não ligar para as mensagens más.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta3" value="b"> b)Contar a um adulto de confiança ou
+                                professor.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta3" value="c"> c)Brincar e ser amigo online com os
+                                bullies.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta3" value="d"> d)Fazer comentários ruins de volta.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 4 -->
+                        <div class="pergunta">
+                            <p>Pergunta 4: O que significa "pedofilia online"?</p>
+                            <label>
+                                <input type="radio" name="resposta4" value="a"> a)É como um jogo de computador, mas não
+                                é
+                                divertido.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta4" value="b"> b)É quando pessoas más usam a internet
+                                para
+                                fazer coisas ruins com crianças.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta4" value="c"> c)É uma forma de aprender coisas na
+                                internet.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta4" value="d"> d)É uma maneira de se proteger na
+                                internet.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 5 -->
+                        <div class="pergunta">
+                            <p>Pergunta 5: O que acontece com pessoas ruins que fazem coisas ruins na internet?</p>
+                            <label>
+                                <input type="radio" name="resposta5" value="a"> a)Eles não são pegos pela polícia.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta5" value="b"> b)Eles têm que pagar um pouco de
+                                dinheiro.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta5" value="c"> c)Eles vão para a prisão por muito
+                                tempo.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta5" value="d"> d)Eles só recebem um aviso.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 6 -->
+                        <div class="pergunta">
+                            <p>Pergunta 6: Como os pais podem ajudar seus filhos a ficarem seguros na internet?</p>
+                            <label>
+                                <input type="radio" name="resposta6" value="a"> a)Deixando as crianças brincarem na
+                                internet
+                                sem supervisão.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta6" value="b"> b)Usando um programa de computador que
+                                ajuda
+                                a proteger as crianças na internet.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta6" value="c"> c)Falando para as crianças esconderem o
+                                que
+                                fazem online.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta6" value="d"> d)Não se preocupando com o que as
+                                crianças
+                                fazem na internet.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 7 -->
+                        <div class="pergunta">
+                            <p>Pergunta 7: O que pode ser perigoso quando as crianças usam a internet?</p>
+                            <label>
+                                <input type="radio" name="resposta7" value="a"> a)Brincar muito ao ar livre.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta7" value="b"> b)Ver coisas assustadoras ou
+                                inapropriadas.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta7" value="c"> c)Comer muitas frutas e vegetais.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta7" value="d"> d)Ficar mais criativo.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 8 -->
+                        <div class="pergunta">
+                            <p>Pergunta 8: Como os pais podem ajudar a manter seus filhos seguros na internet?</p>
+                            <label>
+                                <input type="radio" name="resposta8" value="a"> a)Deixando seus filhos compartilharem
+                                todas
+                                as informações online.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta8" value="b"> b)Colocando um robô para observar tudo o
+                                que
+                                fazem na internet.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta8" value="c"> c)Não se importando com o que seus
+                                filhos
+                                fazem na internet.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta8" value="d"> d)Ensinando sobre como se manter seguro
+                                online e dizendo regras.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 9 -->
+                        <div class="pergunta">
+                            <p>Pergunta 9: Por que é legal conversar com as crianças sobre o que elas fazem na internet?
+                            </p>
+                            <label>
+                                <input type="radio" name="resposta9" value="a"> a)Porque as crianças já sabem tudo sobre
+                                a
+                                internet.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta9" value="b"> b)Para que os pais possam dizer
+                                exatamente o
+                                que as crianças devem fazer online.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta9" value="c"> c)Para que as crianças aprendam a ser
+                                independentes na internet.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta9" value="d"> d)Para que os pais possam ajudar e
+                                proteger
+                                as crianças quando elas usam a internet.
+                            </label><br>
+                        </div>
+
+                        <!-- Pergunta 10 -->
+                        <div class="pergunta">
+                            <p>Pergunta 10: Como podemos ajudar as crianças a se manterem seguras na internet?</p>
+                            <label>
+                                <input type="radio" name="resposta10" value="a"> a)A internet é sempre segura para
+                                crianças,
+                                então não precisa se preocupar.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta10" value="b"> b)É legal aceitar todas as amizades
+                                online
+                                que aparecem.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta10" value="c"> c)Devemos ensinar as crianças a não
+                                compartilharem informações pessoais na internet e a não conversarem com pessoas que não
+                                conhecem.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="resposta10" value="d"> d)Deixar as crianças descobrirem
+                                sozinhas
+                                como ficar seguras online.
+                            </label><br>
+                        </div>
+
+                        <!-- Botões de Verificação e Recomeço -->
+                        <div>
+                            <p id="resultado1"></p>
+                            <p id="resultado2"></p>
+                            <p id="resultado3"></p>
+                            <p id="resultado4"></p>
+                            <p id="resultado5"></p>
+                            <p id="resultado6"></p>
+                            <p id="resultado7"></p>
+                            <p id="resultado8"></p>
+                            <p id="resultado9"></p>
+                            <p id="resultado10"></p>
+                            <p id="resultadoTotal"></p>
+                        </div>
+
+                        <div>
+                            <button class="meu-botao" type="button" onclick="verificarRespostas()">Verificar
+                                Respostas</button>
+                            <button class="meu-botao" type="button" onclick="recomecarQuestionario()">Recomeçar</button>
+                        </div>
+                    </form>
+
+                    <script>
+                        function verificarRespostas() {
+                            const respostasCorretas = ["c", "b", "b", "b", "c", "b", "b", "d", "d", "c"]; // Substitua com as respostas corretas para todas as 10 perguntas
+                            let respostasCorretasCount = 0;
+
+                            for (let i = 1; i <= 10; i++) {
+                                const respostaSelecionada = document.querySelector(`input[name="resposta${i}"]:checked`);
+
+                                if (respostaSelecionada) {
+                                    const respostaUsuario = respostaSelecionada.value;
+
+                                    if (respostaUsuario === respostasCorretas[i - 1]) {
+                                        document.getElementById(`resultado${i}`).textContent = `Resposta ${i} correta!`;
+                                        document.getElementById(`resultado${i}`).classList.add("correta");
+                                        respostasCorretasCount++;
+                                    } else {
+                                        document.getElementById(`resultado${i}`).textContent = `Resposta ${i} incorreta. Tente novamente.`;
+                                        document.getElementById(`resultado${i}`).classList.add("incorreta");
+                                    }
+                                } else {
+                                    document.getElementById(`resultado${i}`).textContent = `Por favor, responda a pergunta ${i}.`;
+                                    document.getElementById(`resultado${i}`).classList.add("nenhuma");
+                                }
+                            }
+
+                            // Exibir pontuação total
+                            document.getElementById("resultadoTotal").textContent = `Você acertou ${respostasCorretasCount} de 10 perguntas.`;
+                            document.getElementById("resultadoTotal").classList.add("pontos")
+                        }
+
+                        function recomecarQuestionario() {
+                            // Limpar seleções de respostas e resultados
+                            for (let i = 1; i <= 10; i++) {
+                                document.querySelectorAll(`input[name="resposta${i}"]`).forEach((input) => {
+                                    input.checked = false;
+                                });
+
+                                document.getElementById(`resultado${i}`).textContent = "";
+                                document.getElementById(`resultado${i}`).classList.remove("correta", "incorreta");
+                            }
+
+                            // Limpar pontuação total
+                            document.getElementById("resultadoTotal").textContent = "";
+                        }
+                    </script>
+
+                </aside>
+
+            </article>
+        </main>
+        <footer>
+
+            <p>Site criado por <a href="#">Erick Piero</a> para <a href="#">Unisuam</a></p>
+
+        </footer>
+        <script src="../js/menu.js"></script>
+    </body>
+
+</php>

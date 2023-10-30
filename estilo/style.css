@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+ --cor0: #c5ebd6;
+ --cor1: #83e1ad;
+ --cor2: #3ddc84;
+ --cor3: #2fa866;
+ --cor4: #1a5c37;
+ --cor5: #063d1e;
+ --cor6: #f6fcdb;
+
+ --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+ --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+body{
+    background-color: var(--cor6);
+    font-family: var(--fonte-padrao);
+}
+
+
+header{
+    background-color: var(--cor4);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+}
+
+header > h1{
+    color:white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-weight: normal;
+}
+header > p{
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fonte-padrao);
+    max-width: 700px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    padding-bottom: 20px;
+}
+
+/* Estilos para o ícone do menu hamburguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--cor5);
+    margin: 3px 0;
+    background-color: rgb(205, 231, 198);
+}
+
+/* Estilos para o menu principal (desktop) */
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    text-align: center;
+}
+
+nav > a {
+    color: rgb(205, 231, 198);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+    margin-bottom: 30px;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+/* Estilos para o menu hamburguer em telas menores */
+@media (max-width: 1015px) {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: var(--cor5);
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--cor5);
+        padding: 10px;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav > a {
+        margin: 5px 0;
+    }
+
+    nav > a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+
+main p{
+    margin: 15px 0px;
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    
+}
+
+main p.textoArrumado{
+    text-align: justify;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.videos{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    position: relative;
+    padding-bottom: 57.6%;
+    margin: 0px -20px 30px -20px;
+}
+
+div.videos > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h1{
+    color:white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-weight: normal;
+}
+
+aside h2{
+    color:white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-weight: normal;
+}
+
+aside h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+li{
+    list-style-position: inside;
+    columns: 1;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+form div.pergunta{
+    background-color:white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+form#quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form div.pergunta > label{
+    font-size: 1.09em;
+    line-height: 1.5em;
+    margin-left: 5px;
+}
+form > div.pergunta > p{
+    text-indent: 0.5em;
+    max-width: 97%;
+}
+
+/* Estilos personalizados para o botão */
+.meu-botao {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    margin-right: 10px; /* Margem direita para criar espaçamento entre os botões */
+}
+/* Estilizar o botão quando o mouse passar por cima */
+.meu-botao:hover {
+    background-color: #45a049; /* Cor de fundo mais escura */
+}
+
+
+/* CSS para centralizar o login no main */
+/* Estilo para centralizar o formulário de login no meio da página (horizontal e verticalmente) */
+
+.login {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    text-align: center
+}
+
+/* CSS para os campos de entrada no formulário */
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para os campos de entrada, ajuste a largura conforme necessário */
+.login input {
+    margin-top: 10px;
+    padding-left: 5px;
+    width: 80%; /* Aumente ou diminua a largura conforme desejado */
+    height: 30px; /* Ajuste a altura conforme desejado */
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 8px;     
+}
+
+/* Se você quiser ajustar o tamanho das imagens nos campos de entrada */
+.login img {
+    width: 200px;    
+    height: auto;
+}
+
+form [type="submit"]{    
+    background-color: #1ba649;
+    font-size: 20px;
+
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    margin-right: 10px; /* Margem direita para criar espaçamento entre os botões */
+}
+/* Estilizar o botão quando o mouse passar por cima */
+form [type="submit"]:hover {
+    background-color: #45a049; /* Cor de fundo mais escura */
+}
+
+.topicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+  }
+  
+  .topico {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 8px -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+  }
+  .topico img {
+    width: 100%;
+    max-width: 354px;
+    transition: transform 0.2s;
+  }
+  
+  .topico img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .topico-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #FFF;
+    z-index: 99;
+    align-items: center;
+  }
+  /*
+  .topico-info button {
+    color: #FFF;
+    background-color: #d94140;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: 0;
+  }*/
+  
+  @media screen and (max-width: 768px) {
+    .topicos {
+      flex-direction: column;
+    }
+    .topico img {
+      max-width: 740px;
+    }
+  }
+
+  .AprovadoReprovado{
+    text-indent: 30px;
+    font-size: 1.1em;
+  }
